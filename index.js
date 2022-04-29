@@ -7,8 +7,9 @@ emitter.on("FizzBuzz", function (number) {
     return;
   }
 
-  console.log(number);
+  if (number % 5 == 0) console.log("Buzz");
+  else console.log(number);
 });
 
-emitter.emit("FizzBuzz", 5);
-emitter.emit("FizzBuzz", "coucou");
+emitter.emit("FizzBuzz", 15);
+emitter.emit("FizzBuzz", 3);
